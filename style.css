@@ -1,0 +1,103 @@
+header {
+    position: relative;
+    text-align: center;
+    color: black;
+    width: 100vw;
+    background: black;
+    overflow: hidden;
+    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(#5595A1, #40494A), url("./images/victoire-samothrace.jpg");
+    background: linear-gradient(#5595A1,#40494A), url("./images/victoire-samothrace.jpg"); /* The least supported option. */
+}
+
+body {
+    background-color: #40494A;
+    color: white;
+    text-align: center;
+}
+
+header > img {
+    width: 100%;
+    opacity: 0.5;
+    -webkit-mask-image: linear-gradient(#F58931,#40494A);
+    mask-image: linear-gradient(#F58931,#40494A);
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header h2 {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.hero-header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+.fa-wand-sparkles {
+    font-size: 1.2rem;
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.social {
+    font-size: 3rem;
+    color: #31D7F5;
+}
+
+#hero img {
+    width: 250px;
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+#hero h3 {
+    color: #F58931 !important;
+}
+
+h3 {
+    color: #F58931 !important; 
+}
+
+.skills h4 {
+    color: #F58931 !important; 
+}
+
+.skills {
+    text-align: left !important;
+}
+
+hr {
+    border: dashed #728183 6px;
+    border-bottom: none;
+    width: 50%;
+    margin: 100px auto;
+}
+
+.skills .icon {
+    width: 1.75em;
+    color: #5595A1 !important;
+}
+
+.footer a {
+    color: #728183 !important;
+}
+
+.footer p {
+    color: #728183 !important;
+}
