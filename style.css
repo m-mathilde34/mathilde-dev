@@ -5,7 +5,7 @@ header {
     width: 100vw;
     background: black;
     overflow: hidden;
-    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+    background: #40494A;  /* fallback colour. Make sure this is just one solid colour. */
     background: -webkit-linear-gradient(#5595A1, #40494A), url("./images/victoire-samothrace.jpg");
     background: linear-gradient(#5595A1,#40494A), url("./images/victoire-samothrace.jpg"); /* The least supported option. */
 }
@@ -100,4 +100,24 @@ hr {
 
 .footer p {
     color: #728183 !important;
+}
+
+.projects h3 {
+    text-align: left !important;
+}
+
+.card {
+    background-color: #728183;
+    color: white;
+}
+
+.card img {
+    filter: grayscale(30%);
+}
+
+.card .btn {
+    background-color: #31D7F5;
+    border: #31D7F5;
+    color: #40494A;
+    font-weight: 500;
 }
