@@ -55,7 +55,7 @@ header h2 {
     align-items: center;
 }
 
-.social {
+.social > a {
     font-size: 3rem;
     color: #31D7F5;
 }
