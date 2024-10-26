@@ -55,9 +55,13 @@ header h2 {
     align-items: center;
 }
 
-.social {
+.social > a {
     font-size: 3rem;
     color: #31D7F5;
+}
+
+.social i:hover {
+    text-shadow: 0 0 10px #728183, 0 0 20px #728183, 0 0 30px #728183;
 }
 
 #hero img {
@@ -115,9 +119,44 @@ hr {
     filter: grayscale(30%);
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
 .card .btn {
     background-color: #31D7F5;
     border: #31D7F5;
     color: #40494A;
     font-weight: 500;
+    margin-top: auto;
+}
+
+.card .card-text {
+    text-align: justify;
+    margin-top: 1.2rem;
+    border-top: 2px solid #40494A;
+    border-bottom: 2px solid #40494A;
+    padding: 10px;
+    /*height: 20rem; change this with media size! */
+}
+
+.tags > .skill-tags {
+    font-weight: 600;
+    font-size: small;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #40494A;
+    color: white;
+    line-height: 22pt;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.tags {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.projects h5 {
+    height: 3.5rem;
 }
