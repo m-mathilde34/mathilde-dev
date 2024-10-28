@@ -160,3 +160,25 @@ hr {
 .projects h5 {
     height: 3.5rem;
 }
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-item {
+    width: 300px;
+    /* border: 2px solid red; */
+}
+
+.contact-item > p {
+    font-size: 150%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+.contact-item a:hover {
+    filter: drop-shadow(4px 4px 8px #728183);
+}
