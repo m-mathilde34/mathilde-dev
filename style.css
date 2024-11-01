@@ -1,14 +1,20 @@
+
 header {
     position: relative;
-    text-align: center;
-    color: black;
-    width: 100vw;
-    background: black;
-    overflow: hidden;
-    background: #40494A;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(#5595A1, #40494A), url("./images/victoire-samothrace.jpg");
-    background: linear-gradient(#5595A1,#40494A), url("./images/victoire-samothrace.jpg"); /* The least supported option. */
-}
+    height: 100vh;
+    background: url('./images/victoire-samothrace.jpg') no-repeat center center / cover;
+  }
+  
+header::after {
+    /* Create a gradient overlay that fades out the image */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(85, 149, 161, 0.3) 20%, #40494A);
+  }
 
 body {
     background-color: #40494A;
@@ -18,9 +24,7 @@ body {
 
 header > img {
     width: 100%;
-    opacity: 0.5;
-    -webkit-mask-image: linear-gradient(#F58931,#40494A);
-    mask-image: linear-gradient(#F58931,#40494A);
+    opacity: 0.3;
 }
 
 h1 {
@@ -28,12 +32,15 @@ h1 {
     font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: black;
+
 }
 
 header h2 {
     font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     font-style: italic;
+    color: rgb(39, 38, 38);
 }
 
 .hero-header-text {
@@ -48,11 +55,12 @@ header h2 {
 }
 
 .social-media {
-    width: 100%;
+    background-color: #728183;
     display: flex;
     justify-content: center;
     gap: 50px;
     align-items: center;
+    height: 6rem;
 }
 
 .social > a {
@@ -61,16 +69,24 @@ header h2 {
 }
 
 .social i:hover {
-    text-shadow: 0 0 10px #728183, 0 0 20px #728183, 0 0 30px #728183;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
 }
 
-#hero img {
+.hero {
+    margin-bottom: 5rem;
+}
+
+.socials {
+    margin-bottom: 2rem; 
+}
+
+.hero img {
     width: 250px;
     border-radius: 50%;
     filter: drop-shadow(5px 5px 5px black);
 }
 
-#hero h3 {
+.hero h3 {
     color: #F58931 !important;
 }
 
@@ -154,7 +170,7 @@ hr {
 
 .tags {
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .projects h5 {
@@ -181,4 +197,66 @@ hr {
 
 .contact-item a:hover {
     filter: drop-shadow(4px 4px 8px #728183);
+}
+
+@media (max-width: 750px){
+    .social-media{
+        gap: 30px;
+    }
+
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+@media (min-width: 576px){
+
+    .card .card-text {
+        height: 23rem;
+    }
+}
+
+@media (min-width: 768px){
+
+    .card .card-text {
+        height: 28rem;
+    }
+}
+
+@media (min-width: 992px){
+
+    .card .card-text {
+        height: 20rem;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .card .card-text {
+        height: 15rem;
+    }
+}
+
+@media (max-width: 900px){
+    h1 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 700px){
+    h1 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
 }
